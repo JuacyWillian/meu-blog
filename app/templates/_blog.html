@@ -1,5 +1,24 @@
 {% extends '_base.html' %}
 
-{% block pagetitle_base %}{% endblock pagetitle_base %}
+{% block pagetitle_base %}Blog do Will :: {% block pagetitle %}{% endblock %}{% endblock pagetitle_base %}
 
-{% block content_base %}{% endblock content_base %}
+{% block content_base %}
+
+<div class="container">
+  <nav class="navbar">
+  </nav>
+  <div>
+    <header>
+      <div class="cover_container">
+        <img src="{{ url_for('static', filename='img/cover.jpg') }}" alt="" class="cover"><br>
+      </div>
+      <img src="{{ url_for('static', filename='img/avatar.jpg' ) }}" alt="" class="avatar"><br>
+      <h1>{{ name }}</h1>
+      <h2 class="subtitle">@{{ username }}</h2>
+    </header>
+    <main>{% block content %}{% endblock %}</main>
+    <footer></footer>
+  </div>
+</div>
+
+{% endblock content_base %}
