@@ -6,8 +6,13 @@
 
 <div class="container">
   <nav class="navbar">
+    <img src="{{ url_for('static', filename='img/home.png') }}" alt="" srcset="">
+    <img src="{{ url_for('static', filename='img/home.png') }}" alt="" srcset="">
+    <img src="{{ url_for('static', filename='img/home.png') }}" alt="" srcset="">
+    <img src="{{ url_for('static', filename='img/home.png') }}" alt="" srcset="">
+    <img src="{{ url_for('static', filename='img/home.png') }}" alt="" srcset="">
   </nav>
-  <div>
+  <div class="main-content">
     <header>
       <div class="cover_container">
         <img src="{{ url_for('static', filename='img/cover.jpg') }}" alt="" class="cover"><br>
@@ -16,7 +21,7 @@
       <h1>{{ name }}</h1>
       <h2 class="subtitle">@{{ username }}</h2>
     </header>
-    <main>{% block content %}{% endblock %}</main>
+    <main class="content">{% block content %}{% endblock %}</main>
     <footer></footer>
   </div>
 </div>
