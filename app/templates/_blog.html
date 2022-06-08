@@ -1,29 +1,58 @@
 {% extends '_base.html' %}
 
-{% block pagetitle_base %}Blog do Will :: {% block pagetitle %}{% endblock %}{% endblock pagetitle_base %}
+{% block pagetitle_base %}Blog do Will ::
+{% block pagetitle %}{% endblock %}
+{% endblock pagetitle_base %}
 
 {% block content_base %}
 
 <div class="container">
   <nav class="navbar">
-    <a href="{{ url_for('core.index') }}" class="navbar-item"><i class="fas fa-home"></i></a>
-    <a href="#" class="navbar-item"><i class="fas fa-tags"></i></a>
-    <a href="#" class="navbar-item"><i class="fas fa-hashtag"></i></a>
+    <a href="{{ url_for('core.index') }}" class="navbar-item">
+      <i class="fas fa-home"></i>
+      <span class="navbar-item-tag">Blog</span>
+    </a>
+    <a href="#" class="navbar-item">
+      <i class="fas fa-tags"></i>
+      <span class="navbar-item-tag">Categorias</span>
+    </a>
+    <a href="#" class="navbar-item">
+      <i class="fas fa-hashtag"></i>
+      <span class="navbar-item-tag">Tags</span>
+    </a>
+    <div class="separador"></div>
 
-    <a href="#" class="navbar-item"><i class="fab fa-github"></i></a>
-    <a href="#" class="navbar-item"><i class="fab fa-twitter"></i></a>
-    <a href="#" class="navbar-item"><i class="fas fa-cog"></i></a>
+    <a href="#" class="navbar-item">
+      <i class="fas fa-portrait"></i>
+      <span class="navbar-item-tag">Sobre mim</span>
+    </a>
+    <a href="#" class="navbar-item">
+      <i class="fas fa-book"></i>
+      <span class="navbar-item-tag">Portifolio</span>
+    </a>
+    <a href="#" class="navbar-item">
+      <i class="fas fa-users"></i>
+      <span class="navbar-item-tag">Redes Sociais</span>
+    </a>
+    <a href="#" class="navbar-item">
+      <i class="fas fa-cog"></i>
+      <span class="navbar-item-tag">Configurações</span>
+    </a>
   </nav>
   <div class="main-content">
     <header>
       <div class="cover_container">
-        <img src="{{ url_for('static', filename='img/cover.jpg') }}" alt="" class="cover"><br>
+        <img src="{{ url_for('static', filename='img/cover.jpg') }}" alt="" class="cover">
+        <br>
       </div>
-      <img src="{{ url_for('static', filename='img/avatar.jpg' ) }}" alt="" class="avatar"><br>
+      <img src="{{ url_for('static', filename='img/avatar.jpg' ) }}" alt="" class="avatar">
+      <br>
       <h1>{{ name }}</h1>
       <h2 class="subtitle">@{{ username }}</h2>
     </header>
-    <main class="content">{% block content %}{% endblock %}</main>
+    <main class="content">
+      {% block content %}{% endblock %}
+    </main>
     <footer></footer>
   </div>
 </div>
