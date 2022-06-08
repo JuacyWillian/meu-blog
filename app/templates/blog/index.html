@@ -14,7 +14,7 @@
   </header>
   <main class="post-content">
     <h4 class="post-title">{{ post.title }}</h4>
-    <p class="post-body">{{ post.body }}</p>
+    <p class="post-body">{{ post.body.split('\n')[0] }} <a href="{{ url_for('blog.article', id=1 ) }}">...more</a></p>
   </main>
   <footer class="post-footer">
     <ul>
