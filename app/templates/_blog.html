@@ -6,11 +6,13 @@
 
 <div class="container">
   <nav class="navbar">
-    <img src="{{ url_for('static', filename='img/home.png') }}" alt="" srcset="">
-    <img src="{{ url_for('static', filename='img/home.png') }}" alt="" srcset="">
-    <img src="{{ url_for('static', filename='img/home.png') }}" alt="" srcset="">
-    <img src="{{ url_for('static', filename='img/home.png') }}" alt="" srcset="">
-    <img src="{{ url_for('static', filename='img/home.png') }}" alt="" srcset="">
+    <a href="{{ url_for('core.index') }}" class="navbar-item"><i class="fas fa-home"></i></a>
+    <a href="#" class="navbar-item"><i class="fas fa-tags"></i></a>
+    <a href="#" class="navbar-item"><i class="fas fa-hashtag"></i></a>
+
+    <a href="#" class="navbar-item"><i class="fab fa-github"></i></a>
+    <a href="#" class="navbar-item"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="navbar-item"><i class="fas fa-cog"></i></a>
   </nav>
   <div class="main-content">
     <header>

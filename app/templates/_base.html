@@ -11,11 +11,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
+        
+        
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
     </head> 
     <body>
         {% block content_base %}{% endblock content_base %}
-
+        
+        <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
         <script src="{{ url_for('static', filename='js/script.js') }}"></script> 
     </body> 
 </html>

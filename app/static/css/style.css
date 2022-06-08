@@ -1,128 +1,149 @@
 nav .navbar {
-    width: 88px;
-    flex-grow: 2;
+  width: 88px;
+  flex-grow: 2;
 }
 
 .navbar {
-    width: 88px;
-    display: flex;
-    flex-direction: column;
+  width: 88px;
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+  color: #333;
+  font-size: xxx-large;
 }
 
-nav img {
+.navbar-item {
+  /*
     width: 48px;
     height: 48px;
-    margin: 5px auto;
-    padding: 10px;
+    */
+  margin: 5px auto;
+  padding: 10px;
+
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+
+  color: #333;
 }
 
 .container {
-    margin: 5px auto;
-    max-width: 700px;
-    display: flex;
+  margin: 5px auto;
+  max-width: 700px;
+  display: flex;
 }
 
 .main-content {
-    float: right;
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
+  float: right;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
 }
+
 .content {
-    margin-top: 25px;
-    max-width: 600px;
+  margin-top: 25px;
+  max-width: 600px;
 }
+
 .cover_container {
-    max-width: 600px;
-    max-height: 250px;
+  max-width: 600px;
+  max-height: 250px;
 }
 
 .avatar {
-    width: 128px;
-    height: 128px;
-    border-radius: 50%;
-    margin-top: -64px;
-    margin-left: 24px;
-    border: #fff solid 5px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  margin-top: -64px;
+  margin-left: 24px;
+  border: #fff solid 5px;
 }
 
 .cover {
-    width: 600px;
-    height: 250px;
+  width: 600px;
+  height: 250px;
 }
 
 .cover,
 .avatar {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 header h1 {
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Nunito', sans-serif; */
-    margin-top: -80px;
-    margin-left: 165px;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
+  margin-top: -80px;
+  margin-left: 165px;
 }
 
 .subtitle {
-    font-size: medium;
-    color: gray;
-    margin-left: 165px;
-    margin-top: -20px;
-    font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+  color: gray;
+  margin-left: 165px;
+  margin-top: -20px;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
 .post {
-    border-top: 1px solid #eee;
-    max-width: 600px;
-    font-family: 'Montserrat', sans-serif;
-    border-bottom: 1px solid #eee;
-    padding: 5px;
+  border-top: 1px solid #eee;
+  max-width: 600px;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 1px solid #eee;
+  padding: 5px;
 }
 
 .post-header {}
+
 .post-avatar {
-    margin: 0;
-    width: 44px;
-    height: 44px;
+  margin: 0;
+  width: 44px;
+  height: 44px;
 }
+
 .post-username {
-    margin-top: -50px;
-    margin-left: 60px;
-    color: #333;
+  margin-top: -50px;
+  margin-left: 60px;
+  color: #333;
 }
+
 .post-username .username {
-    font: message-box;
-    color: gray;
+  font: message-box;
+  color: gray;
 }
+
 .post-content {
-    max-width: 100%;
-    margin-top: -5px;
-    margin-left: 60px;
+  max-width: 100%;
+  margin-top: -5px;
+  margin-left: 60px;
 }
+
 .post-title {
-    color: #333;
-    margin-bottom: -10px;
+  color: #333;
+  margin-bottom: -10px;
 }
+
 .post-body {}
+
 .post-footer {}
 
 
 .post-footer ul {
-    list-style: none;
-    margin: 30px auto auto;
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
+  list-style: none;
+  margin: 30px auto auto;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
 }
 
 .post-footer ul li {
-    display: inline;
-    max-width: 24px;
+  display: inline;
+  max-width: 24px;
 }
 
 
 .post-footer ul li img {
-    width: 32px;
-    height: 32px;
-    margin: auto;
+  width: 32px;
+  height: 32px;
+  margin: auto;
 }
