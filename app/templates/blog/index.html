@@ -1,4 +1,4 @@
-{% extends '_blog.html' %}
+{% extends 'blog/_blog.html' %}
 
 {% block pagetitle %}Home{% endblock pagetitle %}
 
@@ -6,32 +6,32 @@
 
 {% for post in posts %}
 <article class="post">
-  <header class="post-header">
-    <img src="{{ url_for('static', filename='img/avatar.jpg') }}" class="avatar post-avatar">
-    <h3 class="post-username">{{ name }}
-      <span class="username">@{{ username }} - {{ post.dt }}</span>
-    </h3>
-  </header>
-  <main class="post-content">
-    <h4 class="post-title">{{ post.title }}</h4>
-    <p class="post-body">{{ post.body.split('\n')[0] }} <a href="{{ url_for('blog.article', id=1 ) }}">...more</a></p>
-  </main>
-  <footer class="post-footer">
-    <ul>
-      <li>
-        <i class="fas fa-comment"></i>
-      </li>
-      <li>
-        <i class="fas fa-heart"></i>
-      </li>
-      <li>
-        <i class="fas fa-share"></i>
-      </li>
-      <li>
-        <i class="fas fa-retweet"></i>
-      </li>
-    </ul>
-  </footer>
+	<header class="post-header">
+		<img src="{{ url_for('static', filename='img/avatar.jpg') }}" class="avatar post-avatar">
+		<h3 class="post-username">{{ name }}
+			<span class="username">@{{ username }} - {{ post.dt }}</span>
+		</h3>
+	</header>
+	<main class="post-content">
+		<h4 class="post-title">{{ post.title }}</h4>
+		<p class="post-body">{{ post.body.split('\n')[0] }} <a href="{{ url_for('blog.article', id=1 ) }}">...more</a></p>
+	</main>
+	<footer class="post-footer">
+		<ul>
+			<li>
+				<i class="fas fa-comment"></i>
+			</li>
+			<li>
+				<i class="fas fa-heart"></i>
+			</li>
+			<li>
+				<i class="fas fa-share"></i>
+			</li>
+			<li>
+				<i class="fas fa-retweet"></i>
+			</li>
+		</ul>
+	</footer>
 </article>
 {% endfor %}
 
