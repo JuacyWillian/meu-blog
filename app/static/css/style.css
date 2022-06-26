@@ -151,3 +151,12 @@ header h1 {
 .separador {
 	height: 300px;
 }
+
+
+.flex {
+	display: flex;
+}
+
+.cover {
+	object-fit: cover;
+}

@@ -1,5 +1,41 @@
 {% extends '_base.html' %}
 
-{% block pagetitle_base %}{% endblock pagetitle_base %}
+{% block pagetitle_base %}Shop{% endblock pagetitle_base %}
 
-{% block content_base %}{% endblock content_base %}
+{% block content_base %}
+<div class="container">
+	<header class="flex">
+		<input type="text" placeholder="searc" onsubmit="">
+		<img src="{{ url_for('static', filename='img/loja-logo2.png') }}" alt="{{ nomedaloja }}" class="cover">
+
+	</header>
+	<div class="content flex">
+		<aside>
+			<div class="widget">
+				<h3>Categorias</h3>
+				<ul>
+					<li>Fones Bluetooth</li>
+					<li>Caixas de som bluetooth</li>
+					<li>Relógios Quartz</li>
+					<li>Relógios Mecanicos</li>
+					<li>Mouses sem fio</li>
+					<li>Smartwatches</li>
+					<li>Carregadores de celular</li>
+					<li>Carregadores Portateis</li>
+					<li>Smartphones</li>
+				</ul>
+			</div>
+			<div class="widget">
+				<h3>Ordenar por</h3>
+				<li>Preco asc.</li>
+				<li>preco desc.</li>
+				<li>mais vendidos</li>
+				<li>alfabeto</li>
+			</div>
+		</aside>
+		<main></main>
+	</div>
+	<footer></footer>
+</div>
+
+{% endblock content_base %}
