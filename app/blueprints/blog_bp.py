@@ -17,11 +17,11 @@ def index():
     )
 
 
-@blog_bp.route('/<int:id>')
-def article(id):
+@blog_bp.route('/view_post/<int:id>')
+def view_post(id):
     ctx["post"] = posts[id-1]
 
     return render_template(
-        'blog/article.html',
+        'blog/view_post.html',
         **ctx
     )
