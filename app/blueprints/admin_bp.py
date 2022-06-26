@@ -23,42 +23,42 @@ def logout():
 
 
 # POST
-@admin_bp.route('/all_posts', methods=['GET', 'POST'])
-def all_posts():
-    return render_template('admin/all_posts.html')
+@admin_bp.route('/post_list', methods=['GET', 'POST'])
+def post_list():
+    return render_template('admin/post_list.html')
 
 
-@admin_bp.route('/new_post', methods=['GET', 'POST'])
-def new_post():
-    return render_template('admin/new_post.html')
+@admin_bp.route('/post_new', methods=['GET', 'POST'])
+def post_new():
+    return render_template('admin/post_new.html')
 
 
-@admin_bp.route('/edit_post/<int:id>', methods=['GET', 'POST'])
-def edit_post(id: int):
-    return render_template('admin/edit_post.html')
+@admin_bp.route('/post_edit/<int:id>', methods=['GET', 'POST'])
+def post_edit(id: int):
+    return render_template('admin/post_edit.html')
 
 
-@admin_bp.route('/remove_post/<int:id>', methods=['POST'])
-def remove_post(id: int):
-    return redirect(url_for('admin.all_post'))
+@admin_bp.route('/post_remove/<int:id>', methods=['POST'])
+def post_remove(id: int):
+    return redirect(url_for('admin.post_list'))
 
 
 # CATEGORY
-@admin_bp.route('/all_category', methods=['GET', 'POST'])
-def all_category():
-    return render_template('admin/all_category.html')
+@admin_bp.route('/category_list', methods=['GET', 'POST'])
+def category_list():
+    return render_template('admin/category_list.html')
 
 
-@admin_bp.route('/new_category', methods=['GET', 'POST'])
-def new_category():
-    return render_template('admin/new_category.html')
+@admin_bp.route('/category_new', methods=['GET', 'POST'])
+def category_new():
+    return render_template('admin/category_new.html')
 
 
-@admin_bp.route('/edit_category/<int:id>', methods=['GET', 'POST'])
-def edit_category(id: int):
-    return render_template('admin/edit_category.html')
+@admin_bp.route('/category_edit/<int:id>', methods=['GET', 'POST'])
+def category_edit(id: int):
+    return render_template('admin/category_edit.html')
 
 
-@admin_bp.route('/remove_category/<int:id>', methods=['POST'])
-def remove_category(id: int):
-    return redirect(url_for('admin.all_category'))
+@admin_bp.route('/category_remove/<int:id>', methods=['POST'])
+def category_remove(id: int):
+    return redirect(url_for('admin.category_list'))
